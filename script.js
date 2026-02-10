@@ -6,7 +6,7 @@ const mensajes = [
     "Eres el amor de mi vida"
 ];
 
-if (dia === 14 && mes === 1) {
+ifif (true) {
     document.getElementById("titulo").textContent =
         `Feliz San Valentín, ${nombre} 💘`;
 
@@ -15,6 +15,7 @@ if (dia === 14 && mes === 1) {
 
     document.getElementById("boton").style.display = "inline-block";
 }
+
 
 
 
