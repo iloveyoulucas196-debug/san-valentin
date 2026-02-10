@@ -1,34 +1,45 @@
-const nombre = "Luchito"; 
+// 👤 Nombre
+const nombre = "luchito";
 
+// 💌 Mensajes (se mostrarán uno por uno)
 const mensajes = [
-    `Te amaré toda la vida, ${nombre} 💖`,
-    `Eres mi lugar seguro`,
+    `Te amare toda la vida ${nombre} 💖`,
+    `Eres mi hogar`,
     `Contigo todo es mejor`,
-    `Eres mi persona favorita`
+    `Siempre seras mi persona favorita`,
+    `Te amo <3`
 ];
+
+let indice = 0; // controla qué mensaje toca
 
 function cambiarMensaje() {
     const mensaje = document.getElementById("mensaje");
-    const random = Math.floor(Math.random() * mensajes.length);
-    mensaje.textContent = mensajes[random];
+
+    // Mostrar mensaje actual
+    mensaje.textContent = mensajes[indice];
+    indice++;
+
+    // Si ya se mostraron todos los mensajes
+    if (indice === mensajes.length) {
+        // Ocultar el botón
+        document.getElementById("boton").style.display = "none";
+
+        // Mostrar el link a Canva
+        document.getElementById("linkCanva").style.display = "inline-block";
+    }
 }
 
+// 🔒 Desbloqueo por fecha
 const hoy = new Date();
 const dia = hoy.getDate();
 const mes = hoy.getMonth(); // enero = 0, febrero = 1
 
 if (dia === 14 && mes === 1) {
     document.getElementById("titulo").textContent =
-        `Feliz San Valentín mi amor💘`;
+        `Feliz San Valentín mi amor 💘`;
 
     document.getElementById("mensaje").textContent =
-        "Este regalo es para tí bebé";
+        "Hoy sí ;)";
 
     document.getElementById("boton").style.display = "inline-block";
-    document.getElementById("linkCanva").style.display = "inline-block";
-
 }
-
-
-
-
