@@ -42,7 +42,8 @@ const hoy = new Date();
 const dia = hoy.getDate();
 const mes = hoy.getMonth(); // enero = 0, febrero = 1
 
-if (true)  {
+if (dia === 10 && mes === 1)
+  {
     document.getElementById("titulo").textContent =
         `Feliz San Valentín, ${nombre} 💘`;
 
@@ -51,4 +52,5 @@ if (true)  {
 
     document.getElementById("boton").style.display = "inline-block";
 }
+
 
