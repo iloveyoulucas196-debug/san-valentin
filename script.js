@@ -25,5 +25,8 @@ if (dia === 14 && mes === 1)  {
         "Este regalo es para tí bebé";
 
     document.getElementById("boton").style.display = "inline-block";
+    document.getElementById("linkCanva").style.display = "inline-block";
+
 }
+
 
