@@ -1,31 +1,38 @@
 // 👤 Nombre
 const nombre = "luchito";
 
-// 💌 Mensajes (se mostrarán uno por uno)
+// 💌 Mensajes
 const mensajes = [
-    `Te amare toda la vida ${nombre} 💖`,
+    `Te amaré eternamente 💖`,
     `Eres mi hogar`,
-    `Contigo todo es mejor`,
-    `Siempre seras mi persona favorita`,
-    `Te amo <3`
+    `Contigo todo es si`,
+    `Siempre serás mi persona favorita, te amo💘`
 ];
 
-let indice = 0; // controla qué mensaje toca
+let indice = 0;
+let primerClick = true;
 
 function cambiarMensaje() {
     const mensaje = document.getElementById("mensaje");
 
-    // Mostrar mensaje actual
+    // PRIMER CLICK: ocultar video y mostrar foto 1
+    if (primerClick) {
+        document.getElementById("videoIntro").style.display = "none";
+        document.body.style.backgroundImage = "url('fondo1.jpg')";
+        primerClick = false;
+    }
+
+    // Mostrar mensajes
     mensaje.textContent = mensajes[indice];
     indice++;
 
-    // Si ya se mostraron todos los mensajes
+    // Cuando se terminan los mensajes
     if (indice === mensajes.length) {
-        // Ocultar el botón
         document.getElementById("boton").style.display = "none";
-
-        // Mostrar el link a Canva
         document.getElementById("linkCanva").style.display = "inline-block";
+
+        // Cambiar a la foto final
+        document.body.style.backgroundImage = "url('fondo2.jpg')";
     }
 }
 
@@ -36,13 +43,10 @@ const mes = hoy.getMonth(); // enero = 0, febrero = 1
 
 if (true) {
     document.getElementById("titulo").textContent =
-        `Feliz San Valentín mi amor 💘`;
+        `Feliz San Valentín, ${nombre} 💘`;
 
     document.getElementById("mensaje").textContent =
-        "Hoy sí ;)";
+        "Antes de empezar… mirá esto 💖";
 
     document.getElementById("boton").style.display = "inline-block";
 }
-
-
-
