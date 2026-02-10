@@ -1,12 +1,13 @@
 // 👤 Nombre
 const nombre = "luchito";
 
-// 💌 Mensajes
+// 💌 Mensajes (uno por click)
 const mensajes = [
-    `Te amaré eternamente 💖`,
+   ` `Te amaré eternamente 💖`,
     `Eres mi hogar`,
     `Contigo todo es si`,
     `Siempre serás mi persona favorita, te amo💘`
+
 ];
 
 let indice = 0;
@@ -15,23 +16,23 @@ let primerClick = true;
 function cambiarMensaje() {
     const mensaje = document.getElementById("mensaje");
 
-    // PRIMER CLICK: ocultar video y mostrar foto 1
+    // 🟣 Primer click: ocultar video y mostrar foto 1
     if (primerClick) {
         document.getElementById("videoIntro").style.display = "none";
         document.body.style.backgroundImage = "url('fondo1.jpg')";
         primerClick = false;
     }
 
-    // Mostrar mensajes
+    // Mostrar mensaje actual
     mensaje.textContent = mensajes[indice];
     indice++;
 
-    // Cuando se terminan los mensajes
+    // 🟣 Al terminar todos los mensajes
     if (indice === mensajes.length) {
         document.getElementById("boton").style.display = "none";
         document.getElementById("linkCanva").style.display = "inline-block";
 
-        // Cambiar a la foto final
+        // Mostrar foto final
         document.body.style.backgroundImage = "url('fondo2.jpg')";
     }
 }
