@@ -6,30 +6,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<video id="videoIntro" autoplay muted loop>
-    <source src="intro.mp4" type="video/mp4">
-    Tu navegador no soporta video.
-</video>
+
+    <!-- 🎬 Video inicial -->
+    <video id="videoIntro" autoplay muted loop>
+        <source src="intro.mp4" type="video/mp4">
+        Tu navegador no soporta video.
+    </video>
 
     <div class="card">
         <h1 id="titulo">⏳ Un poco de paciencia…</h1>
+
         <p id="mensaje">
             Esto se desbloquea el 14 de febrero 💌
         </p>
+
         <button id="boton" onclick="cambiarMensaje()" style="display:none;">
             💌 Presiona aquí
         </button>
-        <a id="linkCanva"
-   href="https://www.canva.com/design/DAG_Js83CMk/j9LCTadKUNn6cS6y0mo1GQ/edit?utm_content=DAG_Js83CMk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-   target="_blank"
-   style="display:none;">
-   🎥 Ver la presentación
-</a>
 
+        <a id="linkCanva"
+           href="https://www.canva.com/design/DAG_Js83CMk/j9LCTadKUNn6cS6y0mo1GQ/edit?utm_content=DAG_Js83CMk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+           target="_blank"
+           style="display:none;">
+           🎥 Ver la presentación
+        </a>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-
