@@ -1,5 +1,9 @@
 body {
-    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    background-image: url("fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -53,4 +57,5 @@ button:hover {
 #linkCanva:hover {
     background: #e63950;
 }
+
 
