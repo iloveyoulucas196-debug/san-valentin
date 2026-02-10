@@ -3,10 +3,11 @@ const mensajes = [
     "Te amo siempre",
     "Eres mi hogar",
     "Contigo a todos lados",
+    "Te amaré eternamente",
     "Eres el amor de mi vida"
 ];
 
-if (true) 
+if (true) {
     document.getElementById("titulo").textContent =
         `Feliz San Valentín, ${nombre} 💘`;
 
@@ -15,6 +16,7 @@ if (true)
 
     document.getElementById("boton").style.display = "inline-block";
 }
+
 
 
 
