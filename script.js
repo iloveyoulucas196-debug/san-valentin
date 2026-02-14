@@ -3,7 +3,7 @@ const nombre = "luchito";
 
 // 💌 Mensajes (uno por click)
 const mensajes = [
-   ` `Te amaré eternamente 💖`,
+  `Te amaré eternamente 💖`,
     `Eres mi hogar`,
     `Contigo todo es si`,
     `Siempre serás mi persona favorita, te amo💘`
@@ -52,6 +52,7 @@ if (true)
 
     document.getElementById("boton").style.display = "inline-block";
 }
+
 
 
 
